@@ -10,14 +10,16 @@ const productSchema = new mongoose.Schema(
         },
     title: {
             type: String,
-            maxlength: 100
+            maxlength: 100,
         },
     isDone: {
             type: Boolean,
             default:false
         },
-
-
+    id:{
+        type:Number,
+        default: Date.now
+    }
     },
     { timestamps: true }
 );
